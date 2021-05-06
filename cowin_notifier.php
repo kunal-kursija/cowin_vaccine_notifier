@@ -59,7 +59,7 @@ while (TRUE) {
  */
 function get_availability($pincode, $date) {
   $url = get_url($pincode, $date);
-  $command = "curl -s -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36' '$url'";
+  $command = "curl -s -H 'cache-control: no-cache' 'pragma: no-cache' 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36' '$url'";
   return exec($command);
 }
 
