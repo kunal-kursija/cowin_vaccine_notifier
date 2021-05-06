@@ -12,13 +12,17 @@ php --version
 - This package helps you in finding the available vaccines on https://selfregistration.cowin.gov.in/ by Pin-Codes.
  
 ###Installation
+#####Option 1: 
 - Open Command Line Tool and clone the repository by executing below command:
 ```bash
 git clone git@github.com:kunal-kursija/cowin_vaccine_notifier.git
 ```
+#####Option 2:
+- Download the zip from [here](https://github.com/kunal-kursija/cowin_vaccine_notifier/archive/refs/heads/main.zip)
+- Unzip it.
 
 ###Usage
-- Go to the newly cloned directory and edit the file `cowin_notifier.php`.
+- Go to the newly cloned/downloaded directory and edit the file `cowin_notifier.php`.
 - Configure Pin-Codes that you want to search on Line.No.9. And they need to be in comma separated format.
   Example: `$pincodes = [400001, 421004, 431127, 431523, 413249, 431131, 414201, 416810];`
 - Configure Age Group for which you want to search vaccines on Line.No.18.
