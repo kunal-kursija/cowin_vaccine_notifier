@@ -6,7 +6,7 @@
  */
 
 // Search for vaccines at below pincodes.
-$pincodes = [400001, 421004, 431127, 431523, 413249, 431131, 414201, 416810];
+$pincodes = [400001, 421004, 431127, 431523, 413249, 431131, 414201, 416810, 431811, 110096];
 // Vaccine Age Group.
 $age = 18;
 // Search For Vaccines starting from today's date.
@@ -28,7 +28,7 @@ while (TRUE) {
         foreach ($center['sessions'] as $session) {
           if ($session['available_capacity'] > 0 && $session['min_age_limit'] == $age) {
             $vaccines_found = TRUE;
-            $output[] = $pincode . " - FOUND | " . $session['date'] . ' | AGE: ' . $session['min_age_limit'] . '+ | ' . 'Quantity: ' . $session['available_capacity'] . ' | '. $center['name'] . ', ' . $center['address'] . ' | ' . $center['block_name'] . ' | ' . $center['district_name'] . ' | ' . $center['state_name'];
+            $output[] = $pincode . " - FOUND | " . $session['date'] . ' | AGE: ' . $session['min_age_limit'] . '+ | ' . 'Quantity: ' . $session['available_capacity'] . ' | ' . $center['fee_type'] . ' | ' . $center['name'] . ', ' . $center['address'] . ' | ' . $center['block_name'] . ' | ' . $center['district_name'] . ' | ' . $center['state_name'];
           }
         }
       }
